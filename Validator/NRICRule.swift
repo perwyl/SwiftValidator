@@ -12,6 +12,6 @@ public class NRICRule: RegexRule {
     
     public convenience init(message : String = "Invalid NRIC"){
         let capMsg = message.capitalizedString
-        self.init(regex: "([A-Z]{1})\\d{8}([A-Z]{1})", message : capMsg)
+        self.init(regex: "([A-Z]{1})\\d{7}([A-Z]{1})", message : capMsg)
     }
 }
